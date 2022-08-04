@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+</head>
+<body>
+{% block tophead %}
+<!--navigation bar starts here-->
+<p class="tc">NavBar</p>
+{% endblock %}
+
+{% block content %}
+<!-- This is for extending the base html file -->
+{% endblock content %}
+
+{% block footer %}
+<!-- footer starts here -->
+<p>Footer</p>
+{% endblock %}
+</body>
+</html>
